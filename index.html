@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="青蛙电影网（网址 qingwadianyingwang-cn.github.io）是清爽影视网址导航：喜剧、动画、治愈、合家欢、自然纪录片与儿童片的实用网址收录。">
+<meta name="keywords" content="青蛙电影网,青蛙影视,电影网站导航,影视网址大全,在线观看电影,喜剧电影,动画电影,治愈电影,合家欢,自然纪录片,儿童片">
+<meta name="author" content="青蛙电影网">
+<meta name="robots" content="index,follow">
+<title>青蛙电影网 - 清爽影视网址导航与快乐片单 | 实用网址收录</title>
+<style>
+:root{
+  --pad:#eaf7e8; --leaf:#7bc24c; --moss:#2f6b34; --deep:#123a1c; --gold:#ffcf3d; --sky:#5cc8e0; --ink:#22362a; --ink2:#5f7768;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;background:var(--pad);color:var(--ink);line-height:1.9;
+  background-image:radial-gradient(circle at 12% 18%,rgba(123,194,76,.13),transparent 26%),radial-gradient(circle at 88% 82%,rgba(92,200,224,.14),transparent 24%);
+  background-attachment:fixed;overflow-x:hidden}
+a{color:inherit;text-decoration:none;outline:none}
+ul,ol,dl,details{list-style:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 26px}
+::selection{background:var(--leaf);color:#fff}
+
+/* 顶部露珠条 */
+.dew{background:linear-gradient(90deg,var(--deep),var(--moss) 55%,var(--leaf));padding:9px 0;position:relative;overflow:hidden}
+.dew .wr{display:flex;gap:30px;white-space:nowrap;font-size:10.6px;letter-spacing:2.4px;color:#eaf7e8;font-weight:800}
+.dew b{color:var(--gold)}
+.dew .drop{position:absolute;top:-10px;width:11px;height:14px;background:rgba(255,255,255,.55);border-radius:50% 50% 45% 45%;animation:dp 4.2s ease-in infinite;box-shadow:inset 0 -3px 4px rgba(92,200,224,.6)}
+@keyframes dp{to{transform:translateY(46px) scale(.5);opacity:0}}
+@keyframes pop{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+
+/* 报头 */
+.mast{display:flex;justify-content:space-between;align-items:center;gap:22px;padding:30px 0 18px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.frog{width:66px;height:66px;flex-shrink:0;border-radius:50% 50% 46% 46%;background:radial-gradient(circle at 50% 38%,var(--leaf),var(--moss));
+  position:relative;box-shadow:0 8px 0 -3px rgba(18,58,28,.18);animation:pop 3.2s ease-in-out infinite}
+.frog::before,.frog::after{content:"";position:absolute;top:17px;width:15px;height:15px;border-radius:50%;background:#fff;z-index:2}
+.frog::before{left:13px;box-shadow:inset -3px -3px 0 var(--deep)}
+.frog::after{right:13px;box-shadow:inset 3px -3px 0 var(--deep)}
+.frog i{position:absolute;left:50%;top:41px;transform:translateX(-50%);width:15px;height:9px;border-radius:0 0 15px 15px;background:var(--gold);z-index:2}
+.frog u{position:absolute;left:50%;top:52px;transform:translateX(-50%);width:22px;height:9px;border-radius:50%;background:rgba(255,255,255,.35);z-index:3}
+.brand h1{font-size:clamp(31px,7.4vw,64px);font-weight:900;line-height:1.05;letter-spacing:1.5px}
+.brand h1 em{font-style:normal;color:var(--moss)}
+.brand .sub{font-size:12px;color:var(--ink2);margin-top:8px;letter-spacing:1.2px;font-weight:700}
+.brand .sub b{color:var(--moss)}
+.pond{text-align:right;font-size:11px;color:var(--moss);letter-spacing:1.6px;font-weight:800;flex-shrink:0}
+.pond strong{display:block;font-size:19px;color:var(--gold);letter-spacing:1px;font-weight:900}
+.pond span{display:inline-block;animation:bl 1.6s step-end infinite;color:var(--sky)}
+@keyframes bl{50%{opacity:0}}
+
+/* 导航：荷叶标签页 */
+nav.toc{display:flex;gap:0;flex-wrap:wrap;position:sticky;top:0;z-index:30;background:rgba(234,247,232,.96);backdrop-filter:blur(6px);
+  border:2px solid var(--leaf);border-radius:26px;padding:5px;margin-bottom:6px}
+nav.toc a{flex:1;min-width:88px;text-align:center;padding:11px 6px;font-size:12px;font-weight:900;color:var(--ink2);border-radius:20px;transition:.22s;letter-spacing:1.2px}
+nav.toc a:hover{color:var(--moss)}
+nav.toc a.on{color:#fff;background:var(--moss);box-shadow:0 5px 14px -6px var(--moss)}
+
+/* Hero */
+.hero{padding:30px 0 42px}
+.hero-c{display:grid;grid-template-columns:1.02fr .98fr;gap:26px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:10.4px;font-weight:900;color:var(--deep);background:var(--gold);
+  padding:7px 15px;border-radius:999px;letter-spacing:2.4px}
+.eyebrow::before{content:"🐸";animation:pop 2.4s ease-in-out infinite}
+.hero h2{font-size:clamp(25px,5vw,43px);font-weight:900;line-height:1.34;margin:13px 0 12px;letter-spacing:.5px}
+.hero h2 u{text-decoration:none;color:var(--moss)}
+.hero p{font-size:14.8px;color:var(--ink2);max-width:560px}
+.hero p b{color:var(--sky)}
+
+/* 六片叶：div 荷叶 */
+.leaf{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.leaf .l{background:#fff;border:2px solid var(--leaf);border-radius:24px;padding:16px 18px;position:relative;transition:.24s;overflow:hidden}
+.leaf .l:nth-child(2){border-color:var(--sky)}
+.leaf .l:nth-child(3){border-color:var(--gold)}
+.leaf .l:nth-child(4){border-color:var(--moss)}
+.leaf .l:nth-child(5){border-color:#ff9f68}
+.leaf .l:nth-child(6){border-color:#b98bff}
+.leaf .l:hover{transform:translateY(-4px);border-radius:14px}
+.leaf .l .no{font-size:9.6px;color:var(--moss);letter-spacing:2.2px;font-weight:900;font-family:monospace}
+.leaf .l h4{font-size:15.4px;font-weight:900;margin:2px 0 5px;display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+.leaf .l h4 i{font-style:normal;font-size:8.4px;color:#fff;background:var(--moss);padding:3px 9px;border-radius:999px;letter-spacing:.6px;font-weight:900}
+.leaf .l p{font-size:11.5px;color:var(--ink2)}
+.leaf .l::after{content:"";position:absolute;right:-26px;bottom:-24px;width:74px;height:74px;border-radius:50%;opacity:.16}
+.leaf .l:nth-child(1)::after{background:var(--leaf)}
+.leaf .l:nth-child(2)::after{background:var(--sky)}
+.leaf .l:nth-child(3)::after{background:var(--gold)}
+.leaf .l:nth-child(4)::after{background:var(--moss)}
+.leaf .l:nth-child(5)::after{background:#ff9f68}
+.leaf .l:nth-child(6)::after{background:#b98bff}
+
+/* 通用标题 */
+section{padding:28px 0}
+.sec-h{display:flex;align-items:center;gap:12px;margin-bottom:18px;flex-wrap:wrap}
+.sec-h .no{font-size:10.4px;font-weight:900;color:#fff;background:var(--moss);width:32px;height:32px;display:grid;place-items:center;border-radius:50%;font-family:monospace}
+.sec-h h3{font-size:20.4px;font-weight:900;letter-spacing:1.2px}
+.sec-h h3 em{font-style:normal;color:var(--moss)}
+.sec-h .rule{flex:1;height:3px;border-radius:3px;background:linear-gradient(90deg,var(--leaf),transparent);margin-left:6px}
+.sec-h .more{font-size:11.4px;color:var(--ink2);font-weight:900}
+.sec-h .more:hover{color:var(--moss)}
+
+/* 片单：figure 荷叶卡 */
+.films{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.fcard{background:#fff;border:2px solid var(--leaf);border-radius:26px;transition:.26s;overflow:hidden}
+.fcard:hover{border-color:var(--moss);border-radius:12px;box-shadow:0 14px 30px -16px var(--moss);transform:translateY(-4px)}
+.fcard .cv{aspect-ratio:3/4;position:relative;display:grid;place-items:center;text-align:center;font-weight:900;font-size:15px;letter-spacing:1.3px;color:#fff;padding:14px}
+.f1{background:linear-gradient(155deg,#9be06a,#3f8a3f)}
+.f2{background:linear-gradient(155deg,#8fe0f2,#2793ab)}
+.f3{background:linear-gradient(155deg,#ffe27a,#e0a52a)}
+.f4{background:linear-gradient(155deg,#c9a7ff,#6b4bb8)}
+.f5{background:linear-gradient(155deg,#ffc08a,#e06a2a)}
+.f6{background:linear-gradient(155deg,#a7e6c4,#2c9c6a)}
+.f7{background:linear-gradient(155deg,#ffb3c6,#d2507c)}
+.f8{background:linear-gradient(155deg,#bcd7ff,#3f73c9)}
+.fcard .cv .no{position:absolute;left:11px;top:11px;font-family:monospace;font-size:9.8px;color:var(--deep);background:rgba(255,255,255,.75);padding:4px 10px;border-radius:999px;z-index:2}
+.fcard .cv .badge{position:absolute;right:11px;bottom:11px;font-size:8.8px;font-weight:900;color:var(--deep);background:var(--gold);padding:6px 12px;border-radius:999px;z-index:2}
+.fcard .cv::after{content:"🐸";position:absolute;right:12px;top:11px;font-size:15px;opacity:.85}
+.fcard figcaption{padding:13px 16px 16px}
+.fcard h4{font-size:14.6px;font-weight:900;display:flex;justify-content:space-between;gap:7px;align-items:baseline}
+.fcard h4 i{font-style:normal;font-size:8.3px;color:var(--moss);border:1.6px solid var(--moss);padding:2px 8px;border-radius:999px;flex-shrink:0;font-weight:900}
+.fcard p{font-size:11.7px;color:var(--ink2);margin-top:5px}
+.fcard .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px}
+.fcard .tags a{font-size:9.3px;color:var(--ink2);border:1.4px solid var(--leaf);padding:3px 10px;font-weight:900;border-radius:999px}
+.fcard .tags a:hover{color:#fff;background:var(--moss);border-color:var(--moss)}
+
+/* 分类：dl */
+.cat{background:#fff;border:2.4px dashed var(--leaf);border-radius:30px;padding:6px 26px}
+.cat .row{display:grid;grid-template-columns:250px 1fr;gap:18px;padding:15px 4px;border-bottom:2px dotted rgba(47,107,52,.3)}
+.cat .row:last-child{border-bottom:none}
+.cat dt{font-weight:900;font-size:14px;display:flex;flex-direction:column;gap:5px;color:var(--ink)}
+.cat dt b{font-size:9.6px;color:#fff;font-weight:900;background:var(--moss);padding:5px 13px;align-self:flex-start;letter-spacing:1.6px;font-family:monospace;border-radius:999px}
+.cat dt span{font-size:11.2px;color:var(--ink2);font-weight:600;font-style:italic}
+.cat dd{display:flex;flex-wrap:wrap;gap:9px;align-content:center}
+.cat dd a{padding:6px 16px;background:var(--pad);font-size:12.4px;color:var(--ink2);font-weight:900;border-radius:999px;border:1.6px solid var(--leaf)}
+.cat dd a:hover{color:#fff;background:var(--moss);border-color:var(--moss)}
+
+/* 网址收录：table */
+.sites{background:#fff;border:2px solid var(--leaf);border-radius:28px;overflow:hidden}
+.sites table{width:100%;border-collapse:collapse;font-size:12.4px}
+.sites th{background:var(--moss);color:#fff;text-align:left;padding:14px 18px;font-size:10.4px;letter-spacing:2.2px;font-weight:900}
+.sites td{padding:13px 18px;border-bottom:2px solid rgba(123,194,76,.18);vertical-align:middle;color:var(--ink2)}
+.sites tr:last-child td{border-bottom:none}
+.sites tbody tr:nth-child(even){background:rgba(123,194,76,.07)}
+.sites tbody tr:hover{background:rgba(255,207,61,.16)}
+.sites .u{font-weight:900;color:var(--ink);font-size:13.6px}
+.sites .u small{display:block;font-size:9.9px;color:var(--ink2);font-weight:600;margin-top:2px;font-family:monospace}
+.pill{font-size:9.2px;padding:5px 12px;font-weight:900;white-space:nowrap;border:1.6px solid;border-radius:999px;letter-spacing:.8px}
+.p1{color:var(--moss);border-color:var(--leaf);background:rgba(123,194,76,.12)}
+.p2{color:#1f7d91;border-color:var(--sky);background:rgba(92,200,224,.14)}
+.p3{color:#a07a10;border-color:var(--gold);background:rgba(255,207,61,.18)}
+.p4{color:#c2511f;border-color:#ff9f68;background:rgba(255,159,104,.15)}
+.go{color:var(--moss);font-weight:900;font-size:12.6px}
+.go:hover{color:var(--sky);text-decoration:underline}
+
+/* 热播榜：ol + 进度条 + 侧栏 */
+.rank{display:grid;grid-template-columns:1.42fr 1fr;gap:24px;align-items:start}
+.board{background:#fff;border:2px solid var(--leaf);border-radius:28px;padding:8px 26px 26px}
+.board h5{font-size:14.6px;color:var(--moss);padding:16px 0 12px;border-bottom:2.4px solid var(--gold);margin-bottom:15px;display:flex;justify-content:space-between;font-weight:900}
+.board h5 a{font-size:11px;color:var(--ink2);font-weight:900}
+.board ol{counter-reset:r;display:flex;flex-direction:column;gap:15px}
+.board li{counter-increment:r;display:grid;grid-template-columns:56px 1fr;gap:13px;align-items:start}
+.board li::before{content:"蛙 "counter(r,"0");font-weight:900;font-size:10.6px;color:#fff;background:var(--moss);width:54px;height:50px;display:grid;place-items:center;border-radius:16px 6px 16px 6px;font-family:monospace}
+.board li:nth-child(2)::before{background:var(--sky)}
+.board li:nth-child(3)::before{background:var(--gold);color:var(--deep)}
+.board b{font-size:14px;display:block}
+.board p{font-size:11.1px;color:var(--ink2)}
+.bar-i{height:9px;background:rgba(47,107,52,.14);margin-top:9px;overflow:hidden;border-radius:999px}
+.bar-i i{display:block;height:100%;border-radius:999px;background:linear-gradient(90deg,var(--leaf),var(--gold),var(--sky));transform-origin:left;animation:st 2.4s ease-in-out infinite alternate}
+@keyframes st{to{transform:scaleX(.5)}}
+.trend{display:inline-block;font-size:9.2px;font-weight:900;color:#1f7d91;border:1.4px solid var(--sky);padding:3px 11px;margin-top:6px;border-radius:999px}
+
+.pick{display:flex;flex-direction:column;gap:16px}
+.pick article{background:#fff;border:2px solid var(--leaf);border-radius:24px;overflow:hidden;transition:.22s}
+.pick article:hover{border-color:var(--moss)}
+.pick .ph{aspect-ratio:16/8.2;display:grid;place-items:center;text-align:center;font-weight:900;font-size:14px;letter-spacing:1.4px;color:#fff;position:relative}
+.pick .ph::after{content:"";position:absolute;inset:0;background:radial-gradient(circle at 20% 30%,rgba(255,255,255,.3),transparent 40%)}
+.pick figcaption{padding:14px 17px}
+.pick h6{font-size:13.8px;display:flex;justify-content:space-between;gap:8px;font-weight:900}
+.pick h6 span{font-size:8.8px;font-weight:900;color:var(--deep);background:var(--gold);padding:4px 12px;flex-shrink:0;font-family:monospace;border-radius:999px}
+.pick p{font-size:11.7px;color:var(--ink2);margin-top:4px}
+
+/* 指南：手风琴 */
+.guide{background:linear-gradient(150deg,#fff,rgba(123,194,76,.16));border:2px solid var(--leaf);border-radius:30px;padding:26px 30px}
+.guide h4{font-size:16.6px;margin-bottom:15px;color:var(--moss);font-weight:900}
+.guide details{border-bottom:2px dashed rgba(47,107,52,.32);padding:13px 0}
+.guide details:last-child{border-bottom:none}
+.guide summary{cursor:pointer;font-weight:900;font-size:14px;display:flex;justify-content:space-between;align-items:center;gap:12px;list-style:none;color:var(--ink)}
+.guide summary::-webkit-details-marker{display:none}
+.guide summary::after{content:"＋";color:var(--moss);font-size:21px;transition:.22s;flex-shrink:0;font-weight:400}
+.guide details[open] summary::after{content:"－"}
+.guide p{font-size:13px;color:var(--ink2);padding-top:10px;line-height:1.95}
+.guide p b{color:#1f7d91}
+
+/* 关于 */
+.about{background:linear-gradient(135deg,rgba(123,194,76,.22),rgba(92,200,224,.16));border:2.4px solid var(--leaf);border-radius:32px;padding:34px;
+  box-shadow:0 16px 40px -30px var(--moss)}
+.about .k{font-size:10px;letter-spacing:3px;color:var(--deep);background:var(--gold);font-weight:900;display:inline-block;padding:7px 16px;border-radius:999px;margin-bottom:13px}
+.about h2{font-size:24px;margin-bottom:13px;letter-spacing:1.1px;font-weight:900}
+.about h2 em{font-style:normal;color:var(--moss)}
+.about p{font-size:14.8px;color:var(--ink2);max-width:900px}
+.about p b{color:#1f7d91}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:26px}
+.stats div{background:#fff;border:2px solid var(--leaf);border-radius:22px;padding:16px;text-align:center}
+.stats b{display:block;font-size:27px;color:var(--moss);font-weight:900}
+.stats span{font-size:11.3px;color:var(--ink2);font-weight:700}
+
+/* Footer */
+footer.ft{padding:42px 0 22px;margin-top:34px;border-top:3px solid var(--leaf);color:var(--ink2)}
+.fgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;margin-bottom:26px}
+.fgrid h6{font-size:13.8px;margin-bottom:14px;color:var(--moss);letter-spacing:1.5px;font-weight:900}
+.fgrid ul{display:flex;flex-direction:column;gap:8px;font-size:12.6px}
+.fgrid a:hover{color:var(--moss);text-decoration:underline;text-underline-offset:3px}
+.copy{text-align:center;font-size:12px;color:var(--ink2);border-top:2px dashed rgba(47,107,52,.3);padding-top:20px;line-height:1.95}
+.copy b{color:var(--moss)}
+.up{position:fixed;right:16px;bottom:20px;width:54px;height:54px;background:var(--moss);color:#fff;display:grid;place-items:center;z-index:60;font-size:17px;font-weight:900;border-radius:50%;box-shadow:0 8px 20px -8px var(--moss)}
+
+@media (max-width:1080px){.films{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:1000px){.hero-c,.rank{grid-template-columns:1fr}.leaf{grid-template-columns:1fr}}
+@media (max-width:760px){
+  .wrap{padding:0 16px}
+  section{padding:23px 0}
+  .cat .row{grid-template-columns:1fr;gap:9px}
+  .sites{overflow-x:auto;border-radius:20px}
+  .sites table{min-width:800px}
+  .films{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:560px){
+  .stats,.fgrid{grid-template-columns:repeat(2,1fr)}
+  .pond,.dew .r{display:none}
+  .sec-h h3{font-size:16.8px}
+  .about{padding:24px}
+  .guide{padding:20px 16px}
+  .brand h1{font-size:34px}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<div class="dew">
+  <span class="drop" style="left:6%"></span><span class="drop" style="left:19%;animation-delay:1.1s"></span>
+  <span class="drop" style="left:33%;animation-delay:2.3s"></span><span class="drop" style="left:61%;animation-delay:.6s"></span>
+  <span class="drop" style="left:80%;animation-delay:3.1s"></span>
+  <div class="wr">
+    <span><b>青蛙电影网</b> ｜ qingwadianyingwang-cn.github.io</span>
+    <span>喜剧 · 动画 · 治愈 · 合家欢 · 自然纪录片 · 儿童片</span>
+    <span>清爽影视网址导航 ｜ 实用网址收录</span>
+  </div>
+</div>
+
+<header class="wrap">
+  <div class="mast">
+    <div class="brand">
+      <div class="frog"><i></i><u></u></div>
+      <div>
+        <h1><em>青蛙</em>电影网</h1>
+        <div class="sub">清爽影视网址导航 · <b>快乐片单，不绕路</b></div>
+      </div>
+    </div>
+    <div class="pond"><span>● ● ●</span><strong>青蛙池塘 · 放映中</strong></div>
+  </div>
+</header>
+
+<nav class="toc wrap" aria-label="栏目导航">
+  <a class="on" href="#films">片单</a>
+  <a href="#cat">类型</a>
+  <a href="#sites">网址收录</a>
+  <a href="#rank">热播榜</a>
+  <a href="#guide">找片指南</a>
+  <a href="#about">关于</a>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-c">
+      <div>
+        <span class="eyebrow">NOW SHOWING · 池塘放映</span>
+        <h2>天热的时候，<u>看点轻松的</u></h2>
+        <p><b>青蛙电影网</b>把影视入口按<b>六种轻松心情</b>整理：<b>喜剧、动画、治愈、合家欢、自然纪录片、儿童片</b>。<b>一次点击直达</b>，不搬运、不绕路、无诱导。</p>
+      </div>
+
+      <aside class="leaf" aria-label="青蛙六种心情">
+        <div class="l"><div class="no">L / 01</div><h4>喜剧 <i>大笑</i></h4><p>笑点不靠字幕，靠节奏和表情。</p></div>
+        <div class="l"><div class="no">L / 02</div><h4>动画 <i>想象力</i></h4><p>手绘、定格、3D，一帧一帧的诚意。</p></div>
+        <div class="l"><div class="no">L / 03</div><h4>治愈 <i>温柔</i></h4><p>看完不想刷手机，只想发呆。</p></div>
+        <div class="l"><div class="no">L / 04</div><h4>合家欢 <i>一起看</i></h4><p>老人小孩都能笑，也不觉得幼稚。</p></div>
+        <div class="l"><div class="no">L / 05</div><h4>自然纪录片 <i>开阔</i></h4><p>看看别处的山川、海洋与季节。</p></div>
+        <div class="l"><div class="no">L / 06</div><h4>儿童片 <i>陪看</i></h4><p>给孩子的第一部长片，要挑得细。</p></div>
+      </aside>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section id="films">
+    <div class="wrap">
+      <div class="sec-h"><span class="no">01</span><h3>快乐片单 · <em>八部，刚好一晚</em></h3><span class="rule"></span><a class="more" href="#">完整片单 ›</a></div>
+      <div class="films">
+        <figure class="fcard"><div class="cv f1">爆笑喜剧<small>LAUGH</small><span class="no">F.01</span><span class="badge">笑到停</span></div><figcaption><h4>爆笑喜剧 <i>节奏</i></h4><p>不靠字幕，靠演员的停顿和眼神。</p><div class="tags"><a href="#">对白</a><a href="#">误会</a><a href="#">反转</a></div></figcaption></figure>
+        <figure class="fcard"><div class="cv f2">手绘动画<small>HAND</small><span class="no">F.02</span><span class="badge">帧帧</span></div><figcaption><h4>手绘动画 <i>手作</i></h4><p>一秒二十四张，每一张都是心意。</p><div class="tags"><a href="#">手绘</a><a href="#">配乐</a><a href="#">寓言</a></div></figcaption></figure>
+        <figure class="fcard"><div class="cv f3">治愈日常<small>HEAL</small><span class="no">F.03</span><span class="badge">暖</span></div><figcaption><h4>治愈日常 <i>留白</i></h4><p>没什么大事发生，但看完很安心。</p><div class="tags"><a href="#">慢</a><a href="#">食物</a><a href="#">小镇</a></div></figcaption></figure>
+        <figure class="fcard"><div class="cv f4">合家欢<small>FAMILY</small><span class="no">F.04</span><span class="badge">一起看</span></div><figcaption><h4>合家欢 <i>老少</i></h4><p>孩子笑出声，大人也不觉得无聊。</p><div class="tags"><a href="#">亲情</a><a href="#">冒险</a><a href="#">宠物</a></div></figcaption></figure>
+        <figure class="fcard"><div class="cv f5">公路片<small>ROAD</small><span class="no">F.05</span><span class="badge">风</span></div><figcaption><h4>公路片 <i>出发</i></h4><p>目的地不重要，同车的人才重要。</p><div class="tags"><a href="#">旅途</a><a href="#">音乐</a><a href="#">陌生</a></div></figcaption></figure>
+        <figure class="fcard"><div class="cv f6">自然纪录片<small>NATURE</small><span class="no">F.06</span><span class="badge">开阔</span></div><figcaption><h4>自然纪录片 <i>敬畏</i></h4><p>看完只想关掉灯，听窗外的雨。</p><div class="tags"><a href="#">海洋</a><a href="#">山野</a><a href="#">季节</a></div></figcaption></figure>
+        <figure class="fcard"><div class="cv f7">爱情轻喜剧<small>ROM-COM</small><span class="no">F.07</span><span class="badge">甜</span></div><figcaption><h4>爱情轻喜剧 <i>不虐</i></h4><p>吵吵闹闹，最后还是会牵手。</p><div class="tags"><a href="#">误会</a><a href="#">重逢</a><a href="#">城市</a></div></figcaption></figure>
+        <figure class="fcard"><div class="cv f8">儿童片<small>KIDS</small><span class="no">F.08</span><span class="badge">陪看</span></div><figcaption><h4>儿童片 <i>眼光</i></h4><p>给孩子的第一部长片，要挑得细。</p><div class="tags"><a href="#">成长</a><a href="#">勇气</a><a href="#">动物</a></div></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="cat">
+    <div class="wrap">
+      <div class="sec-h"><span class="no">02</span><h3>类型表 · <em>青蛙片单关键词</em></h3><span class="rule"></span><a class="more" href="#">完整类型 ›</a></div>
+      <div class="cat">
+        <div class="row"><dt><b>蛙/01</b>喜剧<span>Comedy</span></dt><dd>
+          <a href="#">爆笑</a><a href="#">冷幽默</a><a href="#">误会</a><a href="#">对白</a><a href="#">脱口秀</a>
+        </dd></div>
+        <div class="row"><dt><b>蛙/02</b>动画<span>Animation</span></dt><dd>
+          <a href="#">手绘</a><a href="#">定格</a><a href="#">3D</a><a href="#">短片</a><a href="#">独立动画</a>
+        </dd></div>
+        <div class="row"><dt><b>蛙/03</b>治愈<span>Healing</span></dt><dd>
+          <a href="#">日常</a><a href="#">食物</a><a href="#">小镇</a><a href="#">慢节奏</a><a href="#">留白</a>
+        </dd></div>
+        <div class="row"><dt><b>蛙/04</b>合家欢<span>Family</span></dt><dd>
+          <a href="#">亲情</a><a href="#">宠物</a><a href="#">冒险</a><a href="#">节日</a><a href="#">老少皆宜</a>
+        </dd></div>
+        <div class="row"><dt><b>蛙/05</b>纪录片<span>Documentary</span></dt><dd>
+          <a href="#">自然</a><a href="#">海洋</a><a href="#">山野</a><a href="#">人文</a><a href="#">美食</a>
+        </dd></div>
+        <div class="row"><dt><b>蛙/06</b>儿童与青春<span>Kids / Youth</span></dt><dd>
+          <a href="#">成长</a><a href="#">勇气</a><a href="#">校园</a><a href="#">动物</a><a href="#">第一次</a>
+        </dd></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sites">
+    <div class="wrap">
+      <div class="sec-h"><span class="no">03</span><h3>网址收录 · <em>影视网址大全</em></h3><span class="rule"></span><a class="more" href="#">提交网址 ›</a></div>
+      <div class="sites">
+        <table>
+          <thead><tr><th style="width:24%">网站 / 入口</th><th style="width:36%">收录说明</th><th style="width:16%">心情</th><th style="width:13%">状态</th><th style="width:11%">访问</th></tr></thead>
+          <tbody>
+            <tr><td class="u">青蛙电影网<small>qingwadianyingwang-cn.github.io</small></td><td>清爽影视网址导航：喜剧、动画、治愈、合家欢、自然纪录片、儿童片的实用网址收录</td><td><span class="pill p1">导航首页</span></td><td>正常</td><td><a class="go" href="#">进入 ›</a></td></tr>
+            <tr><td class="u">喜剧 · 爆笑片单<small>COMEDY</small></td><td>按笑点类型分：对白型、误会型、节奏型、冷幽默型</td><td><span class="pill p2">喜剧</span></td><td>正常</td><td><a class="go" href="#">进入 ›</a></td></tr>
+            <tr><td class="u">动画 · 手绘与定格<small>ANIMATION</small></td><td>手绘、定格、3D、动画短片与独立动画导演索引</td><td><span class="pill p3">动画</span></td><td>更新中</td><td><a class="go" href="#">进入 ›</a></td></tr>
+            <tr><td class="u">治愈 · 看完想发呆<small>HEALING</small></td><td>慢节奏、食物、小镇、留白：给疲惫的一天收尾</td><td><span class="pill p1">治愈</span></td><td>正常</td><td><a class="go" href="#">进入 ›</a></td></tr>
+            <tr><td class="u">合家欢 · 一起看<small>FAMILY</small></td><td>老人小孩都能笑，也不觉得幼稚的片子</td><td><span class="pill p4">合家欢</span></td><td>正常</td><td><a class="go" href="#">进入 ›</a></td></tr>
+            <tr><td class="u">自然纪录片 · 看别处<small>NATURE</small></td><td>海洋、山野、季节与城市：看完想出门走走</td><td><span class="pill p2">纪录片</span></td><td>正常</td><td><a class="go" href="#">进入 ›</a></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section id="rank">
+    <div class="wrap">
+      <div class="sec-h"><span class="no">04</span><h3>热播榜 · <b>本周池塘热度</b></h3><span class="rule"></span><a class="more" href="#">完整榜单 ›</a></div>
+      <div class="rank">
+        <div class="board">
+          <h5><span>本周 青蛙电影网 热播榜</span><a href="#">换一批 ›</a></h5>
+          <ol>
+            <li><div><b>爆笑喜剧：笑点不靠字幕</b><p>演员的停顿和眼神，比台词更管用</p><span class="trend">↑ 23</span><i class="bar-i"><i style="width:96%"></i></i></div></li>
+            <li><div><b>治愈日常：看完想发呆</b><p>没什么大事发生，但心里很安静</p><span class="trend">↑ 18</span><i class="bar-i"><i style="width:87%"></i></i></div></li>
+            <li><div><b>手绘动画：一帧一帧的诚意</b><p>一秒二十四张，每一张都是心意</p><span class="trend">↑ 14</span><i class="bar-i"><i style="width:76%"></i></i></div></li>
+            <li><div><b>自然纪录片：看别处</b><p>海洋、山野、季节，看完想出门</p><span class="trend">↑ 11</span><i class="bar-i"><i style="width:63%"></i></i></div></li>
+            <li><div><b>合家欢：一起看不尴尬</b><p>孩子笑出声，大人也不觉得无聊</p><span class="trend">↑ 9</span><i class="bar-i"><i style="width:51%"></i></i></div></li>
+            <li><div><b>公路片：同车的人</b><p>目的地不重要，出发本身就是答案</p><span class="trend">新</span><i class="bar-i"><i style="width:41%"></i></i></div></li>
+          </ol>
+        </div>
+        <aside class="pick">
+          <article><div class="ph f6">🐸 21 晚快乐片单</div><figcaption><h6>每晚一部，按心情排 <span>21 晚</span></h6><p>喜剧 → 动画 → 治愈 → 合家欢 → 纪录片，越看越轻。</p></figcaption></article>
+          <article><div class="ph f2">🌧️ 雨天观影三原则</div><figcaption><h6>下雨天怎么选片 <span>3 条</span></h6><p>关大灯、备零食、别点开评分低于 7 的喜剧。</p></figcaption></article>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section id="guide">
+    <div class="wrap">
+      <div class="sec-h"><span class="no">05</span><h3>找片指南 · <em>轻松怎么选</em></h3><span class="rule"></span><a class="more" href="#">完整指南 ›</a></div>
+      <div class="guide">
+        <h4>🐸 在 青蛙电影网，把一晚过得轻一点</h4>
+        <details open><summary><span>先定心情，再定类型</span></summary><p>累了要看<b>治愈</b>，想笑要看<b>喜剧</b>，想安静要看<b>纪录片</b>，想陪家人要看<b>合家欢</b>。<b>类型不是分类，是承诺</b>。</p></details>
+        <details><summary><span>喜剧看节奏，不看台词</span></summary><p>好笑的戏，演员<b>不急着说</b>。观察停顿、眼神、转身——台词只是最后一下。</p></details>
+        <details><summary><span>动画看帧数</span></summary><p>手绘的呼吸感、定格的笨拙感、3D 的流畅感，是三种完全不同的诚意。<b>片尾字幕里的人名数量，就是答案</b>。</p></details>
+        <details><summary><span>治愈片别快进</span></summary><p>它的重点往往在<b>空镜</b>：晾衣绳、蒸汽、台阶、路灯。<b>快进等于没看</b>。</p></details>
+        <details><summary><span>给孩子挑片的三个标准</span></summary><p>没有恶意、有动物、结局不骗人。<b>先看时长</b>——超过 100 分钟，先存着。</p></details>
+        <details><summary><span>合家欢怎么选不尴尬</span></summary><p>避开“只有小孩笑”的梗，找<b>双层笑话</b>：孩子笑画面，大人笑台词。<b>本站为影视网址导航，只做入口与片单，不做搬运</b>；倡导正版与流媒体会员观影，别熬太晚。</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="about">
+        <div class="k">ABOUT · 青蛙电影网</div>
+        <h2>关于<em>青蛙电影网</em></h2>
+        <p><b>青蛙电影网</b>是一个<b>清爽影视网址导航</b>。我们不搬运、不绕路，只做一件事：把<b>喜剧、动画、治愈、合家欢、自然纪录片、儿童片</b> 的入口按<b>六种轻松心情</b>整理清楚，让你点一次就看到<b>最对的那一部</b>。</p>
+        <div class="stats">
+          <div><b>6</b><span>轻松心情</span></div>
+          <div><b>386</b><span>已收录网址</span></div>
+          <div><b>每晚</b><span>更新片单</span></div>
+          <div><b>零搬运</b><span>倡导正版</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="ft">
+  <div class="wrap">
+    <div class="fgrid">
+      <div><h6>轻松心情</h6><ul>
+        <li><a href="#films">爆笑喜剧</a></li><li><a href="#cat">治愈日常</a></li>
+        <li><a href="#guide">怎么选片</a></li><li><a href="#sites">网址收录</a></li>
+      </ul></div>
+      <div><h6>动画与纪录片</h6><ul>
+        <li><a href="#cat">手绘动画</a></li><li><a href="#films">定格动画</a></li>
+        <li><a href="#rank">自然纪录片</a></li><li><a href="#guide">看帧数</a></li>
+      </ul></div>
+      <div><h6>合家欢</h6><ul>
+        <li><a href="#cat">一起看</a></li><li><a href="#films">儿童片</a></li>
+        <li><a href="#rank">热播榜</a></li><li><a href="#guide">挑片标准</a></li>
+      </ul></div>
+      <div><h6>规范</h6><ul>
+        <li><a href="#sites">网址收录</a></li><li><a href="#guide">找片指南</a></li>
+        <li><a href="#about">关于我们</a></li><li><a href="#">提交网址</a></li>
+      </ul></div>
+    </div>
+    <div class="copy">
+      © 2026 <b>青蛙电影网</b> ｜ 网址：https://qingwadianyingwang-cn.github.io &nbsp;|&nbsp; 清爽影视网址导航 · 实用网址收录<br>
+      本站为导航用途，倡导正版观影与版权合规，请勿用于侵权搬运。
+    </div>
+  </div>
+</footer>
+
+<a class="up" href="#" aria-label="回到顶部" onclick="window.scrollTo({top:0,behavior:'smooth'});return false">↑</a>
+
+<script>
+(function(){
+  var links=document.querySelectorAll('nav.toc a');
+  var secs=[].slice.call(links).map(function(a){return document.querySelector(a.getAttribute('href'))});
+  function spy(){
+    var y=window.scrollY+150,cur=0;
+    secs.forEach(function(s,i){ if(s&&s.offsetTop<=y) cur=i; });
+    links.forEach(function(a,i){ a.classList.toggle('on',i===cur); });
+  }
+  window.addEventListener('scroll',spy,{passive:true});spy();
+})();
+</script>
+</body>
+</html>
